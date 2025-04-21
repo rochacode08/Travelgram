@@ -1,11 +1,19 @@
 main {
   display: flex;
   flex-wrap: wrap;
-  gap: 24px;
-  padding-block: 24px;
+  gap: 1.5rem;
+  padding-block: 1.5rem;
+  justify-content: center;
+
+  & img {
+    width: 17.875rem;
+    height: 17.875rem;
+  }
 }
 
-main img {
-  width: 286px;
-  height: 286px;
+@media (width <= 425px) {
+  main img {
+    width: 100%;
+    height: auto;
+  }
 }
